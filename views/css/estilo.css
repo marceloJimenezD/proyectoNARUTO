@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+body{
+    position:relative;
+    background: #172025;
+    background-image: url(../img/intro/back.svg);
+    background-repeat: repeat-x;
+    background-position: top;
+    overflow: hidden;
+}
+
+/*  MARCO  */
+
+#marco{
+    position: absolute;
+    width: 1060px;
+    height: 560px;
+    border-radius: 10px 10px 0 0;
+    background: #172025;
+     top: -30px;
+     left : 50%;
+     margin-left:-530px;
+}
+
+/* CONTENEDOR */
+
+#contenedor{
+    position: relative;
+    margin: 5vh auto;
+    width:1000px;
+    height: 500px;
+    background: white;
+}
+
+#contenedor #ingreso{
+    position: absolute;
+    width: 1000px;
+    height: 500px;
+    top:0;
+    left:0px;
+    background: url(../img/intro/ingreso.svg);
+}
+
+#contenedor #ingreso #ingresoFacebook{
+    position: absolute;
+    width: 300px;
+    top: 300px;
+    left:50%;
+    margin-left: -150px;
+    cursor: pointer;
+}
+
+#contenedor #ingreso #ingresoFacebook img{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    float: left;
+}
+
+
+#contenedor #ingreso #ingresoFacebook button{
+    width: 249px;
+    height: 50px;
+    margin-left: 1px;
+    border: 0;
+    background: #3B5998;
+    color: antiquewhite;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#vertical{
+    display: none;
+}
+
+@media all and (orientation:portrait){
+    #contenedor{
+        display: none;
+    }
+    #vertical{
+        display: block;
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        z-index: 1;
+        background-size: cover;
+        background: url(../img/vertical.jpg);
+        background-position: center;
+    }
+}
+
