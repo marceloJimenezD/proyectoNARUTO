@@ -16,7 +16,9 @@ class GestorUsuariosController{
         	session_start();
 
             $_SESSION["validar"] = true;
-        	
+            $_SESSION["primer_nombre"]= $respuestaSeleccionar["primer_nombre"];
+            $_SESSION["foto"]= $respuestaSeleccionar["foto"];
+            
             echo "ok";
         }       
        	

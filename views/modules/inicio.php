@@ -13,9 +13,11 @@
 
 <div id="inicio">
 	<div id="cerrarSesion">
-		<a href="">Cerrar Sesion</a>
+		<a href="index.php?validar=salir">Cerrar Sesion</a>
 	</div>
-	<h2 id= "saludo">Hola <img src="views/img/intro/maria.png" style="border-radius: 100%; margin-left: 10px" width="30px">  Bienvenid@ </h2>
+	<h2 id= "saludo">¡Hola <?php echo $_SESSION["primer_nombre"]; 
+		echo ' <img src="'.$_SESSION["foto"].'" style="border-radius: 100%; margin-left: 10px" width="30px"> ';
+		?> Bienvenid@ </h2>
 
 	<div id="nivel1" class="niveles">
 		<div class="puntaje">100pts</div>

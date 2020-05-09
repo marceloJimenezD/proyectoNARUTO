@@ -11,8 +11,9 @@ $template = new TemplateController();
 $template-> template();
 	
 
-//limpiando Sesion ... por si acaso pe papi...	
-	session_destroy();
+//limpiando Sesion ... por si acaso pe papi...//	
+session_destroy();
 	
 	session_start();
 	$_SESSION["validar"]=false;
+////////////////////////////////////////////////

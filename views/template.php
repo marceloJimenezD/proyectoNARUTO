@@ -20,6 +20,9 @@
                     case "inicio":
                         include "modules/inicio.php";     
                     break;
+                    case "salir":
+                        include "modules/salir.php";     
+                    break;
                     
                     default:
                         include "modules/ingreso.php";

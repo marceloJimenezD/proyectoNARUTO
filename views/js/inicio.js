@@ -1,9 +1,9 @@
 var inicio = {
     iniciar: function(){
         
-        var identificador="44444";
-        var primer_nombre="maria";
-        var foto = "views/img/intro/maria.png";
+        var identificador="3";
+        var primer_nombre="marce";
+        var foto = "views/img/intro/julio.png";
 
         var xhr = new XMLHttpRequest();
         var url= "views/ajax/usuarios.php";
