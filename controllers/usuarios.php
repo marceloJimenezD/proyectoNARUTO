@@ -12,11 +12,13 @@ class GestorUsuariosController{
         }
 
         if($respuestaSeleccionar || $respuestaInsertar == "ok"){
-        	//session_start();
-        	return "ok";
-        }
 
-       
+        	session_start();
+
+            $_SESSION["validar"] = true;
+        	
+            echo "ok";
+        }       
        	
     }
 }

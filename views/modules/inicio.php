@@ -1,3 +1,16 @@
+<?php
+	session_start();
+
+	if($_SESSION["validar"] == false){
+		header("location:index.php?validar=ingreso");
+		
+		exit();
+	}
+
+?>
+
+
+
 <div id="inicio">
 	<div id="cerrarSesion">
 		<a href="">Cerrar Sesion</a>

@@ -15,7 +15,18 @@
     <div id="contenedor">
         <?php
             if(isset($_GET["validar"])){
-                include "modules/inicio.php";
+
+                switch ($_GET["validar"]) {
+                    case "inicio":
+                        include "modules/inicio.php";     
+                    break;
+                    
+                    default:
+                        include "modules/ingreso.php";
+                    
+                }
+                
+
 
             }else{
                 include "modules/ingreso.php";
