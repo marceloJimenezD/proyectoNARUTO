@@ -1,7 +1,7 @@
 var inicio = {
     iniciar: function(){
         
-        var identificador="11111";
+        var identificador="44444";
         var primer_nombre="maria";
         var foto = "views/img/intro/maria.png";
 
@@ -16,7 +16,9 @@ var inicio = {
             //console.log("R:",xhr.readyState);
             //console.log("S:",xhr.status);
             if((xhr.readyState==4)&&(xhr.status==200)){
-                console.log("xhr.RT: ",xhr.responseText);
+                if(xhr.responseText == "ok"){
+                    window.location= "index.php?validar=inicio";
+                }
             }
         }
     }

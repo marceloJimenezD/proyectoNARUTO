@@ -11,8 +11,12 @@ class GestorUsuariosController{
         	$respuestaInsertar =GestorUsuariosModel::guardarUsuariosModel($datosController);
         }
 
+        if($respuestaSeleccionar || $respuestaInsertar == "ok"){
+        	//session_start();
+        	return "ok";
+        }
 
        
-       	var_dump($respuestaSeleccionar);
+       	
     }
 }

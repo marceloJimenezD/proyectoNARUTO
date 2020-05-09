@@ -94,3 +94,62 @@ body{
     }
 }
 
+#contenedor #inicio{
+   position: absolute;
+   width: 1000px;
+   height: 500px;
+   top:0px;
+   left: 0px;
+   background: url(../img/intro/inicio.svg);
+
+}
+
+#contenedor #inicio #cerrarSesion a{
+   position: absolute;
+   right: 0%;
+   text-align: center;
+   color: white;
+   top:-25px;
+
+}
+#contenedor #inicio #saludo {
+    position: absolute;
+    width: 1000px;
+    left: 50%;
+    text-align: center;
+    margin-left: -500px;
+    color: white;
+}
+
+#contenedor #inicio .niveles {
+    float: left;
+    position: relative;
+    width: 33.33%;
+    text-align: center;
+    margin-top: 200px;
+    height: 300px;
+}
+
+#contenedor #inicio .niveles .puntaje{
+    position: absolute;
+    top: -120px;
+    left: 50%;
+    width: 100%;
+    margin-left: -50%;
+    color: white;
+    font-size: 20px;
+}
+
+#contenedor #inicio .niveles button{
+    display: block;
+    width:100px;
+    margin: 10px 0;
+    padding: 10px;
+    border:0;
+    background: #131C17;
+    color: white;
+    font-size: 15px;
+    border-radius: 10px 0 10px 0;
+    cursor: pointer;
+
+}

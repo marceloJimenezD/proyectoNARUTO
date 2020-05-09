@@ -14,7 +14,13 @@
 
     <div id="contenedor">
         <?php
-            include "modules/ingreso.php"
+            if(isset($_GET["validar"])){
+                include "modules/inicio.php";
+
+            }else{
+                include "modules/ingreso.php";
+            }
+
         ?>
     
     </div>
