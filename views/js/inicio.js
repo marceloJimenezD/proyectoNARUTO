@@ -1,9 +1,9 @@
 var inicio = {
     iniciar: function(){
         
-        var identificador="22222";
-        var primer_nombre="julio";
-        var foto = "views/img/intro/julio.png";
+        var identificador="11111";
+        var primer_nombre="maria";
+        var foto = "views/img/intro/maria.png";
 
         var xhr = new XMLHttpRequest();
         var url= "views/ajax/usuarios.php";
@@ -13,8 +13,8 @@ var inicio = {
         xhr.send("identificador="+identificador+"& primer_nombre="+primer_nombre+"& foto="+foto);
 
         xhr.onreadystatechange=function(){
-            console.log("R:",xhr.readyState);
-            console.log("S:",xhr.status);
+            //console.log("R:",xhr.readyState);
+            //console.log("S:",xhr.status);
             if((xhr.readyState==4)&&(xhr.status==200)){
                 console.log("xhr.RT: ",xhr.responseText);
             }
