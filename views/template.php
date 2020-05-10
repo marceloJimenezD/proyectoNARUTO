@@ -38,6 +38,7 @@
         ?>
     
     </div>
+    <script src="views/js/var_y_prop.js"></script>
     <script src="views/js/inicio.js"></script>
 </body>
 </html>

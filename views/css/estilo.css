@@ -153,3 +153,33 @@ body{
     cursor: pointer;
 
 }
+
+#contenedor #inicio .niveles .puntajes{
+    background: rgba(0,0,0,.8);
+    padding: 10px;
+    margin:10px;
+    border-radius: 10px;
+    color: yellow;
+}
+
+#contenedor #inicio .niveles .puntajes ul li{
+    display: inline-block;
+    width: 30%;
+    margin:20px 2px 5px 2px;
+}
+
+#contenedor #inicio .niveles .puntajes ul li img{
+    border-radius: 100%;
+    width: 30px;
+}
+
+
+#contenedor #inicio .niveles .puntajes ul li h3{
+    font-size: 100;
+    color: white;
+}
+
+
+#contenedor #lienzo{
+    display: none;
+}

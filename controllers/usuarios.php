@@ -3,7 +3,7 @@ class GestorUsuariosController{
     static public function guardarUsuariosController($datos){
     	$respuestaInsertar = "";
 
-        $datosController = array("identificador"=>$datos["identificador"] , "primer_nombre"=>$datos["primer_nombre"] , "foto" => $datos["foto"], "nivel1" => "ok", "puntaje_nivel1" => 0);
+        $datosController = array("identificador"=>$datos["identificador"] , "primer_nombre"=>$datos["primer_nombre"] , "foto" => $datos["foto"], "nivel1" => "ok", "puntaje_nivel1" => 0,"nivel2" => "no", "puntaje_nivel2" => 0,"nivel3" => "no", "puntaje_nivel3" => 0);
 
         $respuestaSeleccionar= GestorUsuariosModel::seleccionarUsuariosModel($datosController);
 
@@ -12,6 +12,7 @@ class GestorUsuariosController{
         }
 
         if($respuestaSeleccionar || $respuestaInsertar == "ok"){
+            $respuestaSeleccionar= GestorUsuariosModel::seleccionarUsuariosModel($datosController);
 
         	session_start();
 
@@ -28,5 +29,20 @@ class GestorUsuariosController{
             echo "ok";
         }       
        	
+    }
+
+
+    static public function puntajesNivelController($datos){
+        $respuesta = GestorUsuariosModel::puntajesNivelModel($datos);
+
+        foreach ($respuesta as $row => $item) {
+            if($item[$datos]>0){
+                echo '<li>
+                        <img src="'.$item["foto"].'">
+                        <h3>'.$item["primer_nombre"].'</h3>
+                        <h2>'.$item[$datos].'</h2>
+                    </li>';
+            }
+        }
     }
 }
