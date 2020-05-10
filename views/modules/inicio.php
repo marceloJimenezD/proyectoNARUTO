@@ -20,7 +20,7 @@
 		?> Bienvenid@ </h2>
 
 	<div id="nivel1" class="niveles">
-		<div class="puntaje">100pts</div>
+		<div class="puntaje"><?php echo $_SESSION["puntaje_nivel1"] ?></div>
 		<img src="views/img/intro/checkLevel1.svg">
 		<center>
 			<button>INGRESAR</button>
@@ -31,16 +31,39 @@
 	</div>
 
 	<div id="nivel2" class="niveles">
-		<div class="puntaje">0pts</div>
-		<img src="views/img/intro/blockLevel2.svg">
+		<div class="puntaje"><?php echo $_SESSION["puntaje_nivel2"] ?></div>
+		<?php
+			if($_SESSION["nivel2"] == "ok"){
+				echo '<img src="views/img/intro/checkLevel2.svg">
+					<center>
+					<button>INGRESAR</button>
+					</center>
+				';
+			}else{
+				echo '<img src="views/img/intro/blockLevel2.svg">';
+			}
+		?>
+
+		
 		<div class="puntajes">
 			
 		</div>
 	</div>
 
 	<div id="nivel3" class="niveles">
-		<div class="puntaje">0pts</div>
-		<img src="views/img/intro/blockLevel3.svg">
+		<div class="puntaje"><?php echo $_SESSION["puntaje_nivel3"] ?></div>
+
+		<?php
+			if($_SESSION["nivel3"] == "ok"){
+				echo '<img src="views/img/intro/checkLevel3.svg">
+					<center>
+					<button>INGRESAR</button>
+					</center>
+				';
+			}else{
+				echo '<img src="views/img/intro/blockLevel3.svg">';
+			}
+		?>
 
 		<div class="puntajes">
 			
